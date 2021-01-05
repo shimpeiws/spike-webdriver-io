@@ -45,7 +45,7 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    headless: true,
+    headless: false,
 
     capabilities: [{
 
@@ -56,9 +56,9 @@ exports.config = {
         //
         browserName: 'chrome',
         acceptInsecureCerts: true,
-        chromeOptions: {
+        'goog:chromeOptions': {
           args: ['--headless', '--disable-gpu'],
-        },
+        }
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
