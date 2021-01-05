@@ -58,6 +58,7 @@ exports.config = {
         acceptInsecureCerts: true,
         'goog:chromeOptions': {
           args: ['--headless', '--disable-gpu'],
+          headless: true
         }
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
